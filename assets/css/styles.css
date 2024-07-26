@@ -16,6 +16,21 @@ body {
 }
 
 /* common */
+.section-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.section-desc {
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
 a {
   text-decoration: none;
 }
@@ -200,24 +215,112 @@ a {
 }
 
 .hero__images {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .hero__img {
-    width: 330px;
-    height: 540px;
-    border-radius: 6px;
-    object-fit: cover;
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .hero__img:first-child {
-    position: relative;
-    margin-right: -6px;
+  position: relative;
+  margin-right: -6px;
 }
 
 .hero__img:last-child {
-    width: 210px;
-    height: 410px;
+  width: 210px;
+  height: 410px;
+}
+
+/* Service */
+
+.service {
+  padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+  text-align: center;
+}
+
+.service__desc {
+  margin-top: 18px;
+  width: 468px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service__row {
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+}
+
+.service__list {
+  margin-bottom: 55px;
+}
+
+/* service-item */
+
+.service-item {
+  display: flex;
+  width: 470px;
+  border-radius: 10px;
+  padding: 22px;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.service-item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+  background: #2E80CE;
+  color: #fff;
+}
+
+.service-item__icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+  color: #10375c;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-item__body {
+  margin-left: 20px;
+}
+
+.service-item__heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.27;
+  color: #10375c;
+}
+
+.service-item__desc {
+  margin-top: 8px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
 }
