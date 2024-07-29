@@ -10,7 +10,14 @@
     <!-- =================  Style CSS ============= -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <!-- =================  font styles ============= -->
+    <!-- =================  font Inner ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =================  font Sora ============= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -170,7 +177,7 @@
       </div>
     </header>
     <!-- =========== Main =========== -->
-    <main style="height: 5000px">
+    <main>
       <!-- Services -->
       <section class="service">
         <div class="container">
@@ -430,9 +437,9 @@
             </article>
           </div>
 
-          <div class="member__control">
+          <div class="control member__control">
             <!-- previous -->
-            <button class="member__control-btn">
+            <button class="control__btn direction">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
@@ -450,9 +457,9 @@
             </button>
 
             <!-- Next -->
-            <button class="member__control-btn">
+            <button class="control__btn direction">
               <svg
-                class="member__control-next-icon"
+                class="control-next-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="12"
@@ -470,6 +477,210 @@
           </div>
         </div>
       </section>
+
+      <!-- Install -->
+      <section class="install">
+        <div class="container">
+          <div class="install__inner">
+            <figure class="install__images">
+              <img
+                src="./assets/img/iphone.png"
+                alt="iphone"
+                class="install__img"
+              />
+            </figure>
+            <section class="install__content">
+              <h2 class="install__heading section-heading">
+                Take back your smile with dentures
+              </h2>
+              <p class="install__desc section-desc">
+                If you’re missing multiple teeth due to decay, injury, or the
+                natural aging process, dentures might be the perfect solution.
+              </p>
+              <div class="install__row">
+                <a class="install__btn" href="#!">
+                  <img
+                    src="./assets/img/Google Play outline badge.svg"
+                    alt="Google-Play"
+                    class="install__btn-img"
+                  />
+                </a>
+
+                <a class="install__btn" href="#!">
+                  <img
+                    src="./assets/img/App Store outline badge.svg"
+                    alt="App-store"
+                    class="install__btn-img"
+                  />
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="news">
+        <div class="container">
+          <div class="news__inner">
+            <section class="news__content">
+              <h2 class="section-heading">Read Latest News & Events.</h2>
+              <a href="#!" class="news__link">Read All Blog</a>
+
+              <div class="control direction">
+                <!-- previous -->
+                <button class="control__btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="12"
+                    viewBox="0 0 6 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.5 1L0.5 6L5.5 11"
+                      stroke="currentcolor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Next -->
+                <button class="control__btn">
+                  <svg
+                    class="control-next-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="12"
+                    viewBox="0 0 6 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.5 1L0.5 6L5.5 11"
+                      stroke="currentcolor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </section>
+            <div class="news__events">
+              <!-- news-items 1 -->
+              <article class="news__items">
+                <figure class="new__items-images">
+                  <img
+                    src="./assets/img/new-02.jpg"
+                    alt=""
+                    class="new__items-thumb"
+                  />
+                </figure>
+                <section class="news__body">
+                  <h3 class="news__heading">
+                    Key Considerations for Regulatory Compliant.
+                  </h3>
+                  <p class="news__desc">
+                    It’s easy to think about medical care from a narrow
+                    perspective. You go to the hospital.
+                  </p>
+                  <a href="#!" class="news__body-link">Learn More</a>
+                </section>
+              </article>
+              <!-- News-items 2 -->
+              <article class="news__items">
+                <figure class="new__items-images">
+                  <img
+                    src="./assets/img/new-01.jpg"
+                    alt=""
+                    class="new__items-thumb"
+                  />
+                </figure>
+                <section class="news__body">
+                  <h3 class="news__heading">
+                    What Is Population Health Management?
+                  </h3>
+                  <p class="news__desc">
+                    It’s easy to think about medical care from a narrow
+                    perspective. You go to the hospital.
+                  </p>
+                  <a href="#!" class="news__body-link">Learn More</a>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Appointment -->
+      <section class="appointment">
+        <div class="container">
+          <div class="appointment__content">
+            <h2 class="appointment__heading section-heading">
+              Always welcoming new patients
+            </h2>
+            <span class="appointment__separated"></span>
+            <p class="appointment__desc section-desc">
+              Take control of your dental health and get the personalized care
+              you deserve. Call (541) 772-8846 to schedule
+            </p>
+            <a href="#!" class="appointment__btn btn">Appointment</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__column">
+            <a href="/">
+              <div class="logo">
+                <span class="logo__circle"></span>
+                <!-- SEO -->
+                <span class="logo__text">
+                  <span class="logo__brand">Shine</span>
+                  <span class="logo__brand logo__brand--small">smile</span>
+                </span>
+              </div>
+            </a>
+            <p class="footer__desc">
+              Exceptional dental care for all ages. Your great smile begins with
+              a great dentist.
+            </p>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__heading"></h3>
+            <ul class="footer__list">
+              <li><a href="#!" class="footer__link">Help center</a></li>
+              <li><a href="#!" class="footer__link">Account information</a></li>
+              <li><a href="#!" class="footer__link">About</a></li>
+              <li><a href="#!" class="footer__link">Contact us</a></li>
+              <li><a href="#!" class="footer__link">Support</a></li>
+              <li><a href="#!" class="footer__link">Help center</a></li>
+              <li><a href="#!" class="footer__link">Account information</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__heading"></h3>
+            <ul class="footer__list">
+              <li><a href="#!" class="footer__link">Help center</a></li>
+              <li><a href="#!" class="footer__link">Account information</a></li>
+              <li><a href="#!" class="footer__link">About</a></li>
+              <li><a href="#!" class="footer__link">Contact us</a></li>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__heading"></h3>
+            <div class="footer__social">
+              <a href="" class="footer__social-btn"></a>
+              <a href="" class="footer__social-btn"></a>
+              <a href="" class="footer__social-btn"></a>
+            </div>
+            <h3 class="footer__heading"></h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
