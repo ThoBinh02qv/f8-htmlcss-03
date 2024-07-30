@@ -17,6 +17,15 @@ body {
 
 /* common */
 
+/* Thẻ trong form */
+.input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .control {
   display: flex;
   column-gap: 18px;
@@ -696,7 +705,122 @@ a {
 /* Footer */
 
 .footer {
-  margin-bottom: 500px;
-  background: #10375C;
-  padding: 100px 0;
+  margin-top: 170px;
+  background: #10375c;
+  padding-top: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__heading:nth-of-type(2) {
+  margin-top: 28px;
+}
+
+.footer__list {
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.footer__list__link {
+  margin-top: 10px;
+}
+
+.footer__link {
+  display: block;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+}
+
+.footer__link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.footer__desc-right {
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* email */
+
+.footer__email {
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer__email-input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+
+.footer__email-submit {
+  --height: 46px;
+  margin-left: 12px;
+  min-width: 108px;
+  border-radius: 4px;
+  border: none;
+  /* font-family: "Open Sans"; */
+}
+
+.footer__copyright {
+  border-top: solid 1px #406181;
+  margin-top: 28px;
+  padding: 28px 0 42px 0;
+}
+
+.footer__copyright__text {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
 }
