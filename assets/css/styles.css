@@ -109,6 +109,14 @@ a {
 }
 /* Header */
 .header {
+  background: var(--header-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.hero-section {
   min-height: 100vh;
   background: var(--header-bg);
   padding-top: 30px;
@@ -165,6 +173,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .navbar__list {
